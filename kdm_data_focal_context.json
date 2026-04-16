@@ -1,0 +1,985 @@
+{
+    "projet": "BankSystem_KDM",
+    "classes": [
+        {
+            "name": "SavingsAccount",
+            "visibility": "public",
+            "attributs": [
+                {
+                    "name": "DEFAULT_INTEREST_RATE",
+                    "type": "double",
+                    "visibility": "package"
+                },
+                {
+                    "name": "balance",
+                    "type": "double",
+                    "visibility": "private"
+                },
+                {
+                    "name": "interestRate",
+                    "type": "double",
+                    "visibility": "private"
+                },
+                {
+                    "name": "history",
+                    "type": "List<String>",
+                    "visibility": "package"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "SavingsAccount",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": true
+                },
+                {
+                    "name": "SavingsAccount",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": true
+                },
+                {
+                    "name": "processTransaction",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getBalance",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getInterestRate",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getHistory",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "toString",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": false
+                }
+            ]
+        },
+        {
+            "name": "Main",
+            "visibility": "public",
+            "attributs": [
+                {
+                    "name": "VIEW_BALANCE",
+                    "type": "int",
+                    "visibility": "package"
+                },
+                {
+                    "name": "DEPOSIT",
+                    "type": "int",
+                    "visibility": "package"
+                },
+                {
+                    "name": "WITHDRAW",
+                    "type": "int",
+                    "visibility": "package"
+                },
+                {
+                    "name": "EXIT",
+                    "type": "int",
+                    "visibility": "package"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "main",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [
+                        {
+                            "name": "args",
+                            "type": "String[]"
+                        }
+                    ],
+                    "is_constructor": false
+                },
+                {
+                    "name": "displayMenu",
+                    "type_retour": "void",
+                    "visibility": "private",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "handleDeposit",
+                    "type_retour": "void",
+                    "visibility": "private",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "handleWithdraw",
+                    "type_retour": "void",
+                    "visibility": "private",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "readInt",
+                    "type_retour": "void",
+                    "visibility": "private",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "readDouble",
+                    "type_retour": "void",
+                    "visibility": "private",
+                    "parametres": [],
+                    "is_constructor": false
+                }
+            ]
+        },
+        {
+            "name": "InsolventException",
+            "visibility": "public",
+            "attributs": [],
+            "methods": [
+                {
+                    "name": "InsolventException",
+                    "type_retour": "void",
+                    "visibility": "public",
+                    "parametres": [],
+                    "is_constructor": true
+                }
+            ]
+        },
+        {
+            "name": "InsolventExceptionTest",
+            "visibility": "package",
+            "attributs": [],
+            "methods": [
+                {
+                    "name": "constructor_always_isInstanceOfException",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_always_isInstanceOfThrowable",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_standardMessage_getMessageReturnsIt",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_messageWithNumericAmount_getMessagePreservesAmount",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_singleWordMessage_getMessageReturnsIt",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_emptyMessage_getMessageReturnsEmptyString",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_whitespaceMessage_getMessageReturnsWhitespace",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_nullMessage_getMessageReturnsNull",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_veryLongMessage_getMessageReturnsFullString",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_specialCharactersInMessage_getMessagePreservesThem",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_thrown_caughtAsInsolventException",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_thrown_caughtAsException",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_caughtAsException_messagePreserved",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_messageOnly_causeIsNull",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_twoInstances_messagesAreIndependent",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_twoInstancesSameMessage_areDistinctObjects",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_thrownBySavingsAccount_messageContainsWithdrawalAmount",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_thrownBySavingsAccount_messageIsNotBlank",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                }
+            ]
+        },
+        {
+            "name": "ApplyInterestTest",
+            "visibility": "package",
+            "attributs": [
+                {
+                    "name": "account",
+                    "type": "SavingsAccount",
+                    "visibility": "private"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "setUp",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_standardBalance_balanceIncreasedByTwoPercent",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_calledTwice_balanceCompoundsCorrectly",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_zeroBalance_balanceRemainsZero",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_fractionalBalance_interestAppliedPrecisely",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_largeBalance_interestAppliedCorrectly",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_calledOnce_addsOneHistoryEntry",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_calledMultipleTimes_historyEntryAddedEachTime",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_afterDeposit_interestBasedOnUpdatedBalance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_afterWithdrawal_interestBasedOnReducedBalance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_thenWithdrawFullBalance_succeeds",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_thenWithdrawOverBalance_throwsInsolventException",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "applyInterest_oneInstance_doesNotAffectOtherInstance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                }
+            ]
+        },
+        {
+            "name": "GetAccountSummaryTest",
+            "visibility": "package",
+            "attributs": [
+                {
+                    "name": "account",
+                    "type": "SavingsAccount",
+                    "visibility": "private"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "setUp",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_always_returnsNonNull",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_always_returnsNonEmptyString",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_always_matchesExpectedFormat",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterConstruction_containsCorrectInitialBalance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterDeposit_balanceSegmentUpdated",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterWithdrawal_balanceSegmentUpdated",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterFullWithdrawal_balanceSegmentIsZero",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterApplyInterest_balanceSegmentReflectsInterest",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_zeroInitialBalance_balanceSegmentIsZero",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_largeInitialBalance_balanceSegmentIsAccurate",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterConstruction_transactionCountIsOne",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterDeposit_transactionCountIncrements",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterWithdrawal_transactionCountIncrements",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterApplyInterest_transactionCountIncrements",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterMixedOperations_transactionCountIsAccumulated",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterFailedWithdrawal_transactionCountUnchanged",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterConstruction_exactStringMatch",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_afterSequenceOfOperations_exactStringMatch",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_calledRepeatedly_returnsConsistentResult",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_calledRepeatedly_doesNotIncrementTransactionCount",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "getAccountSummary_twoInstances_summariesAreIndependent",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                }
+            ]
+        },
+        {
+            "name": "MainTest",
+            "visibility": "package",
+            "attributs": [
+                {
+                    "name": "originalIn",
+                    "type": "InputStream",
+                    "visibility": "package"
+                },
+                {
+                    "name": "originalOut",
+                    "type": "PrintStream",
+                    "visibility": "package"
+                },
+                {
+                    "name": "originalErr",
+                    "type": "PrintStream",
+                    "visibility": "package"
+                },
+                {
+                    "name": "capturedOut",
+                    "type": "ByteArrayOutputStream",
+                    "visibility": "private"
+                },
+                {
+                    "name": "capturedErr",
+                    "type": "ByteArrayOutputStream",
+                    "visibility": "private"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "setUp",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "tearDown",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "runWithInput",
+                    "type_retour": "void",
+                    "visibility": "private",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "capturedError",
+                    "type_retour": "void",
+                    "visibility": "private",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_onStartup_printsBanner",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_onStartup_printsMenuOptions",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option4_printsClosingMessageAndExits",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option4_immediateQuit_noErrorOutput",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option1_displaysAccountSummary",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option1_displaysInitialBalance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option1_calledTwice_summaryIsIdempotent",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option2_validDeposit_printsSuccessMessage",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option2_thenOption1_balanceIncreased",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option2_zeroDeposit_noError",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option2_largeDeposit_noError",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option2_multipleDeposits_balanceAccumulates",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option3_validWithdrawal_printsSuccessMessage",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option3_thenOption1_balanceDecreased",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option3_withdrawExactBalance_noError",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option3_withdrawalExceedsBalance_printsErrorMessage",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option3_overdraft_stderrContainsExceptionMessage",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option3_failedWithdrawal_balanceUnchanged",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option3_overdraft_programContinuesRunning",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_option3_withdrawOneLessThanBalance_succeeds",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_invalidOption_printsInvalidMessage",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_invalidOption_noErrorOutput",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_invalidOption_programContinuesRunning",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_depositThenWithdraw_balanceIsCorrect",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_overdraftThenDeposit_depositSucceeds",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "main_multipleInvalidThenValidOptions_runsCorrectly",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                }
+            ]
+        },
+        {
+            "name": "SavingsAccountTest",
+            "visibility": "package",
+            "attributs": [
+                {
+                    "name": "savingsAccount",
+                    "type": "SavingsAccount",
+                    "visibility": "package"
+                }
+            ],
+            "methods": [
+                {
+                    "name": "setUp",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "testConstructor",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "testProcessTransaction",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "testProcessTransactionZeroAmount",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "testProcessTransactionInsufficientBalance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "testApplyInterest",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "testAccountSummary",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                }
+            ]
+        },
+        {
+            "name": "ProcessTransactionTest",
+            "visibility": "package",
+            "attributs": [],
+            "methods": [
+                {
+                    "name": "constructor_positiveInitialBalance_accountSummaryReflectsBalance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_zeroInitialBalance_accountSummaryReflectsZero",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_largeInitialBalance_accountSummaryReflectsBalance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_fractionalInitialBalance_accountSummaryReflectsBalance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_anyBalance_historyContainsExactlyOneEntry",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_twoInstances_historiesAreIndependent",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_twoInstances_balancesAreIndependent",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_defaultInterestRate_applyInterestYieldsCorrectBalance",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_zeroBalance_applyInterestKeepsBalanceAtZero",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_positiveBalance_immediateWithdrawalSucceeds",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_positiveBalance_immediateOverdraftThrowsInsolventException",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                },
+                {
+                    "name": "constructor_zeroBalance_anyWithdrawalThrowsInsolventException",
+                    "type_retour": "void",
+                    "visibility": "package",
+                    "parametres": [],
+                    "is_constructor": false
+                }
+            ]
+        }
+    ]
+}
