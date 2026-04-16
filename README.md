@@ -38,19 +38,18 @@ The pipeline consists of two main phases:
 ### Quick Start
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/SalahEddineELMENYIY/KDM-Semantic-Bridge-Unit-Tests.git](https://github.com/SalahEddineELMENYIY/KDM-Semantic-Bridge-Unit-Tests.git)
+   git clone https://github.com/SalahEddineELMENYIY/KDM-Semantic-Bridge-Unit-Tests.git
    cd KDM-Semantic-Bridge-Unit-Tests
-   '''
+   
 2. **Install dependencies::**
    ```bash
    pip install -r requirements.txt
-   '''
+   
 3. **Configure Ollama:**
    Ensure Ollama is running, then pull the models used in the Multi-LLM Judge:
    ```bash
    ollama pull gemma
    ollama pull deepseek-v3
-   '''
 
 ## 📂 Repository Structure
 
