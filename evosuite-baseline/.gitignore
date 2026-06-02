@@ -1,0 +1,18 @@
+# EvoSuite + Java JARs are downloaded by run-evosuite.sh / reproduction steps;
+# they are not redistributed from this repository.
+jars/
+
+# Compiled bytecode is regenerated locally
+classes/
+evosuite-tests-compiled/
+*.class
+
+# Raw per-class reports — the consolidated statistics/ folder is what is committed
+evosuite-report-*/
+
+# Runtime log
+production-run.log
+
+# Local Java 8 backport of SavingsAccount.java (see README, step 4) — the
+# canonical source remains in the main banking project.
+src/

@@ -1,0 +1,2 @@
+TARGET_CLASS,Coverage,LineCoverage,BranchCoverage,MethodCoverage,Total_Goals,Covered_Goals
+com.bank.logic.Main,0.8921212121212121,0.9636363636363636,0.8666666666666667,1.0,171,151

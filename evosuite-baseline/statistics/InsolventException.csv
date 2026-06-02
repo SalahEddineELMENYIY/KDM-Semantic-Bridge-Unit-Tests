@@ -1,0 +1,2 @@
+TARGET_CLASS,Coverage,LineCoverage,BranchCoverage,MethodCoverage,Total_Goals,Covered_Goals
+com.bank.logic.InsolventException,1.0,1.0,1.0,1.0,6,6
